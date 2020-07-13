@@ -1,7 +1,6 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Иванченко](https://up.htmlacademy.ru/htmlcss/28/user/1176737).
-* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
