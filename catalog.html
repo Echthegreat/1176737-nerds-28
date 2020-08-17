@@ -31,63 +31,43 @@
       <section>
         <h2 class="visually-hidden">Фильтры и сортировка</h2>
 
-        <form action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=pricerange.value">
-          <div class="range">
+        <form action="https://echo.htmlacademy.ru/" method="get" oninput="price-output.value=price-range.value">
+          <div>
             <label>Стоимость:<br>
-              <input type="range" name="pricerange" value="15000" min="0" max="20000">
+              <input type="range" name="price-range" value="0" min="0" max="20000">
             </label>
+          </div>
+          <br>
 
-            <div class="line">
-              <button disabled class="left-pin"></button>
-              <button disabled class="right-pin>"></button>
-            </div>
+          <div>
+            <span>От</span>
+            <output name="price-output" value="0"></output>
+          </div>
+
+          <div>
+            <span>До</span>
           </div>
 
           <br>
 
           <div>
-            <div>
-              <span>От</span>
-              <output name="priceoutput" value="15000"></output>
-            </div>
-
-            <div>
-              <span>До</span>
-            </div>
+            <label>Сетка:<br>
+              <input type="radio" name="grid" value="adaptive" checked> Адаптивная<br>
+              <input type="radio" name="grid" value="fixed"> Фиксированная<br>
+              <input type="radio" name="grid" value="fluid"> Резиновая
+            </label>
           </div>
 
           <br>
 
           <div>
-            <p>Сетка:</p><br>
-            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-            <label for="adaptive">Адаптивная</label><br>
-
-            <input type="radio" name="grid" id="fixed" value="fixed">
-            <label for="fixed">Фиксированная</label><br>
-
-            <input type="radio" name="grid" id="fluid" value="fluid">
-            <label for="fluid">Резиновая</label>
-          </div>
-
-          <br>
-
-          <div>
-            <p>Особенности:</p><br>
-              <input type="checkbox" name="features" id="slider" value="slider" checked>
-              <label for="slider">Слайдер</label><br>
-
-              <input type="checkbox" name="features" id="advantages" value="advantages">
-              <label for="advantages">Блок преимуществ</label><br>
-
-              <input type="checkbox" name="features" id="news" value="news" checked>
-              <label for="news">Новости</label><br>
-
-              <input type="checkbox" name="features" id="gallery" value="gallery">
-              <label for="gallery">Галерея</label><br>
-
-              <input type="checkbox" name="features" id="cart" value="cart">
-              <label for="cart">Корзина</label>
+            <label>Особенности:<br>
+              <input type="checkbox" name="features" value="slider" checked> Слайдер<br>
+              <input type="checkbox" name="features" value="advantages"> Блок преимуществ<br>
+              <input type="checkbox" name="features" value="news" checked> Новости<br>
+              <input type="checkbox" name="features" value="gallery"> Галерея<br>
+              <input type="checkbox" name="features" value="cart"> Корзина
+            </label>
           </div>
 
           <br>
@@ -185,6 +165,7 @@
           <li><a href="blank.html">Следующая</a></li>
         </ul>
       </section>
+
     </main>
 
     <footer>
@@ -201,7 +182,9 @@
              тел. +7 (812) 275-75-75
           </p>
 
-          <a href="blank.html">Напишите нам</a>
+          <a href="blank.html">
+            <p>Напишите нам</p>
+          </a>
         </div>
 
         <img src="img/index/map.jpg" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8.
